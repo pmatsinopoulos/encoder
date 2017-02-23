@@ -2,13 +2,13 @@
     $(document).ready(function(){
         $('#scramble').on('click', function(e){
             $('.scramble').
-            encoder();
+            encode();
         });
 
         $('#unscramble').on('click', function(e){
 
             $('.scramble').
-            encoder({action: 'unscramble'});
+            encode({action: 'unscramble'});
         });
 
     });

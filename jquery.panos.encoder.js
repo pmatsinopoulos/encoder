@@ -1,8 +1,8 @@
 (function($){
 
-    $.fn.encoder = function(options) {
+    $.fn.encode = function(options) {
 
-        var settings = $.extend({}, $.fn.encoder.defaults, options);
+        var settings = $.extend({}, $.fn.encode.defaults, options);
 
         return this.each(function(){
             var current_value = $(this).text();
@@ -25,9 +25,9 @@
 
         }); /* this.each(function(){ ... */
 
-    }; // $.fn.encoder = function(action) {
+    }; // $.fn.encode = function(action) {
 
-    $.fn.encoder.defaults = {
+    $.fn.encode.defaults = {
         scrambleColor: 'Blue',
         unscrambleColor: 'Green',
         action: 'scramble'
