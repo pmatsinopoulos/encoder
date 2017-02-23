@@ -1,13 +1,13 @@
 (function($){
     $(document).ready(function(){
         $('#scramble').on('click', function(e){
-            $('#scramble').
+            $('.scramble').
             encoder();
         });
 
         $('#unscramble').on('click', function(e){
 
-            $('#scramble').
+            $('.scramble').
             encoder({action: 'unscramble'});
         });
 
